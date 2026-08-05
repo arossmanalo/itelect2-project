@@ -1,3 +1,7 @@
+export const tasks = [
+  { id: 1, title: "Finish Sysiarch PPT", dueDate: "2026-08-06", completed: false },
+  { id: 2, title: "Complete ITMETRE RRL's", dueDate: "2026-08-10", completed: false }
+];
 
 export const formatDate = (date) => `Due: ${date.toLocaleDateString()}`
 console.log(formatDate(new Date("2026-07-22")))
