@@ -6,7 +6,7 @@ import router from './routes/index.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-
+// Midterm Comment
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());

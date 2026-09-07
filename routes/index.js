@@ -18,7 +18,7 @@ router.get('/tasks/:id', async (req, res) => {
     res.json(task);
 });
 
-router.get('/users', async (req, res) => {
+router.get('/users', async (req, res    ) => {
     const users = await User.findAll({ order: [['id', 'ASC']] });
     res.json(users);
 });
