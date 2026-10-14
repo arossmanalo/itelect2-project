@@ -1,6 +1,10 @@
 # itelect2-project
 My IT Elective 2 backend web development project.
 
+# Live URL
+https://itelect2-project-lkcf.onrender.com
+
+
 ## API Testing
 
 1. Get Request
