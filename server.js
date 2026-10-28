@@ -15,7 +15,11 @@ if (!process.env.JWT_SECRET) {
   process.exit(1);
 }
 
-app.use(cors());
+const allowedOrigins = (process.env.CORS_ORIGIN || "")
+  .split(",")
+  .filter(Boolean);
+
+app.use(cors({ origin: allowedOrigins }));
 app.use(morgan('dev'));
 app.use(express.json());
 
